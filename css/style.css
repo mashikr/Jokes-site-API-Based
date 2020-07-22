@@ -1,0 +1,170 @@
+body {
+    background: linear-gradient(to bottom, rgba(0, 255, 0, 0.5), rgba(255, 255, 0, 0.5)), url(../img/bg.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.container {
+    height: 90vh;
+    margin: 5vh auto;
+    position: relative;
+    overflow: hidden;
+}
+
+#scroll-y {
+    overflow-y: scroll;
+    max-height: 75%;
+}
+
+#category ::-webkit-scrollbar {
+    width: .3rem;
+    background-color: #999;
+    border-radius: 1rem;
+    visibility: hidden;
+}
+
+#category:hover ::-webkit-scrollbar {
+    visibility: visible;
+}
+
+#categor ::-webkit-scrollbar-thumb {
+    background: #343a40;
+    border-radius: 1rem;
+    visibility: hidden;
+}
+#categor:hover ::-webkit-scrollbar-thumb {
+    visibility: visible;
+}
+#categor ::-webkit-scrollbar-thumb:hover {
+    background-color: #354553;
+}
+
+#bookmark ::-webkit-scrollbar {
+    width: .3rem;
+    background-color: #999;
+    border-radius: 1rem;
+    visibility: hidden;
+}
+
+#bookmark:hover ::-webkit-scrollbar {
+    visibility: visible;
+}
+
+#bookmark ::-webkit-scrollbar-thumb {
+    background: #343a40;
+    border-radius: 1rem;
+    visibility: hidden;
+}
+#bookmark:hover ::-webkit-scrollbar-thumb {
+    visibility: visible;
+}
+#bookmark ::-webkit-scrollbar-thumb:hover {
+    background-color: #354553;
+}
+
+#scroll-y ul {
+    margin-right: 1rem;
+}
+#bookmark #scroll-y {
+    direction: rtl;
+}
+#bookmark #scroll-y ul {
+    margin: 0;
+    margin-left: 1rem;
+    direction: ltr;
+}
+img{
+    height: 1.5rem;
+}
+.toggle-div button {
+    border: none;
+    font-size: 1.3rem;
+    border-radius: .2rem;
+    color: #fff;
+    background-color: var(--secondary);
+    cursor: pointer;
+}
+.toggle-div button:hover {
+    opacity: .7;
+}
+.close-btn span {
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+.close-btn span:hover {
+    opacity: .7;
+}
+
+.nav-link:hover {
+    background-color: rgba(256, 256, 256, .2);
+}
+
+#content {
+    overflow-y: scroll;
+}
+
+#content-body ::-webkit-scrollbar {
+    width: .3rem;
+    background-color: #ddd;
+    border-radius: 1rem;
+    visibility: hidden;
+}
+
+#content-body:hover ::-webkit-scrollbar {
+    visibility: visible;
+}
+
+#content-body ::-webkit-scrollbar-thumb {
+    background: #999;
+    border-radius: 1rem;
+    visibility: hidden;
+}
+#content-body:hover ::-webkit-scrollbar-thumb {
+    visibility: visible;
+}
+#content-body ::-webkit-scrollbar-thumb:hover {
+    background-color: #354553;
+}
+
+
+
+@media (max-width: 576px) {
+    #category {
+        position: absolute;
+        max-height: 100vh;
+        width: 40%;
+        top: 0;
+        left: -40%;
+        z-index: 15;
+        transition: all .5s;
+    }
+}
+
+@media (min-width: 576px) {
+    #category {
+        position: initial;
+    }
+}
+@media (min-width: 768px) {
+    #bookmark {
+        position: initial;
+    }
+}
+  
+@media (max-width: 768px) {
+    .container {
+        margin: 0;
+        height: 100vh;
+        max-width: 100vw;
+        border-radius: 0 !important;
+    }
+
+    #bookmark {
+        position: absolute;
+        max-height: 100vh;
+        width: 40%;
+        top: 0;
+        right: -40%;
+        z-index: 10;
+        transition: all .5s;
+    }
+  }
