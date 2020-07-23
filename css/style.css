@@ -30,15 +30,15 @@ body {
     visibility: visible;
 }
 
-#categor ::-webkit-scrollbar-thumb {
+#category ::-webkit-scrollbar-thumb {
     background: #343a40;
     border-radius: 1rem;
     visibility: hidden;
 }
-#categor:hover ::-webkit-scrollbar-thumb {
+#category:hover ::-webkit-scrollbar-thumb {
     visibility: visible;
 }
-#categor ::-webkit-scrollbar-thumb:hover {
+#category ::-webkit-scrollbar-thumb:hover {
     background-color: #354553;
 }
 
@@ -129,12 +129,12 @@ img{
     background-color: #354553;
 }
 
-#book-star {
+.book-star {
     cursor: pointer;
     float: right;
     font-size: 1.3rem;
 }
-#book-star:hover {
+.book-star:hover {
     opacity: .8;
 }
 .card {
