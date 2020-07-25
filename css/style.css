@@ -16,7 +16,7 @@ body {
 
 #scroll-y {
     overflow-y: scroll;
-    max-height: 75%;
+    max-height: 70%;
 }
 
 #category ::-webkit-scrollbar {
@@ -145,11 +145,12 @@ img{
     #category {
         position: absolute;
         max-height: 100vh;
-        width: 40%;
+        width: 39%;
         top: 0;
         left: -40%;
         z-index: 15;
         transition: all .5s;
+        box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5) !important;
     }
 }
 
@@ -169,11 +170,12 @@ img{
     #bookmark {
         position: absolute;
         max-height: 100vh;
-        width: 40%;
+        width: 39%;
         top: 0;
         right: -40%;
         z-index: 10;
         transition: all .5s;
+        box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5) !important;
     }
   }
 
